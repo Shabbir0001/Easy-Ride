@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+};
+
+
+
+nav{
+    /* background: #0082e6; */
+    height: 80px;
+    width: 100%;
+    border-radius: 80px;
+}
+nav:hover{
+    background: #18683c6c;
+    border-bottom: 3px solid gray;
+    box-shadow: 3px 4px 8px;
+    transition: .7s;
+   
+}
+
+.logo{
+    color:#fa0881 ;
+    font-size: 50px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+ .logo:hover{
+        color: #48c4f5f1;
+        transition: .7s;    
+}
+.logo .go{
+    color: #2c0212a1;
+    font-size: 70px;
+}
+
+.logo .go:hover{
+    color:transparent;
+    padding-left: 450px;
+    transition: 2s;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li .link{
+    color: #1ed278;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+.link:hover {
+    background: #ec88dcc7;
+    color: #5a093b ;
+    transition: 0.3s;
+}
+
+.dynamic-link{
+    background:#ff0000b6;
+    color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 20px;
+    /* border: 3px dotted orangered; */
+}
+
+.dynamic-link:hover{
+    background: white;
+    color: red;
+    transition: .3s;
+}
+
+.checkBtn {
+    color: aquamarine;
+    display: none;
+    float: right;
+    cursor: pointer;
+    line-height: 80px;
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+#check {
+    display: none;
+}
+
+
+/* I am using media queries for the first time after starting this course */
+@media (max-width: 1200px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    } 
+    nav ul li .link {
+        font-size: 16px;
+    }
+    .logo .go:hover{
+        color:transparent;
+        padding-left: 40px;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 900px){
+    .checkBtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        display: none;
+        text-align: center;
+        background: #2c3e50;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: 0;
+        transition: all 0.6s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li .link {
+        font-size: 20px;
+    }
+    .link:hover{
+        background: none;
+        color: #0082e6;
+    }
+    .logo .go:hover{
+        color:transparent;
+        padding-left: 40px;
+        transition: 1s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        display: block;
+    }
+}
+

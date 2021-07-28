@@ -1,0 +1,36 @@
+.search-container{
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.distance {
+    background: #ec532ce7;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 3px 4px 8px;
+}
+
+.distance-item{
+    padding: 5px;
+}
+
+.category {
+    background: lightblue;
+    margin: 10px;
+    border-radius: 10px;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 4px 8px;
+}
+
+.category-item{
+    padding: 10px;
+    margin: 10px;
+}
